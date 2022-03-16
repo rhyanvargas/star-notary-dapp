@@ -2,12 +2,16 @@
 
 _[View Contract: 0x84CAcBc167dbEdC26756893348bF0659e4a2d269 `rinkeby network`](https://rinkeby.etherscan.io/address/0x84CAcBc167dbEdC26756893348bF0659e4a2d269)_
 
-###Token Name: `StarToken`
+### Token Name: `StarToken`
 
 ### Token Symbol: `STAR`
 
 ## Tech Stack
 
+- html
+- css
+- javascript
+- web3js
 - solidity
 - openzeppelin-solidity v2.3
 - Truffle v5.0.2 (core: 5.0.2)
