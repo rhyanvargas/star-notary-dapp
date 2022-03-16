@@ -17,6 +17,3 @@ _[View Contract: 0x84CAcBc167dbEdC26756893348bF0659e4a2d269 `rinkeby network`](h
 - Truffle v5.0.2 (core: 5.0.2)
 - Solidity v0.5.0 (solc-js)
 - Node v14.17.3
-
-3. Version of the Truffle and OpenZeppelin used
-4. Your Token Address on the Rinkeby Network
