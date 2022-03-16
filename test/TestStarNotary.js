@@ -105,6 +105,13 @@ it('lets a user transfer a star', async () => {
 
 it('lookUptokenIdToStarInfo test', async () => {
     // 1. create a Star with different tokenId
+    let starName = "AwesomeStar7";
+    let user1 = accounts[1];
+    let starId = 7;
+    let instance = await StarNotary.deployed();
+    await instance.createStar(starName, starId, { from: user1 })
     // 2. Call your method lookUptokenIdToStarInfo
+    let getStarName = await instance.lookUptokenIdToStarInfo(starId, { from: user1 })
     // 3. Verify if you Star name is the same
+    assert.equal(starName, getStarName)
 });
