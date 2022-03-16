@@ -91,7 +91,7 @@ it('can add the star name and star symbol properly', async () => {
     assert.equal(tokenSymbol, symbol)
 });
 
-it('lets 2 users exchange stars', async () => { //TODO
+it('lets 2 users exchange stars', async () => {
     // 1. create 2 Stars with different tokenId
     let instance = await StarNotary.deployed();
     let contractOwner = accounts[0];
