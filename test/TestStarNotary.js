@@ -106,8 +106,9 @@ it('lets 2 users exchange stars', async () => {
     let beforeStar1Owner = await instance.ownerOf.call(starId)
     let beforeStar2Owner = await instance.ownerOf.call(starId2)
     // 2. Call the exchangeStars functions implemented in the Smart Contract
-    await instance.approve(user1, starId2, { from: user2 })
-    await instance.exchangeStars(starId, starId2, { from: user1 })
+    // -->  User 1 Needs to approve user2 to initiate exchange function
+    await instance.approve(user2, starId, { from: user1 })
+    await instance.exchangeStars(starId2, starId, { from: user2 })
     // 3. Verify that the owners changed
     let newStar1Owner = await instance.ownerOf.call(starId)
     let newStar2Owner = await instance.ownerOf.call(starId2)
