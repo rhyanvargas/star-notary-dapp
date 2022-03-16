@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.5.2",
+    "openzeppelin-solidity": "2.3"
+  },
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.14.0"
+  }
+}
